@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background: #333;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.header .nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.hero button {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  color: #333;
+  background: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hero button:hover {
+  background: #ddd;
+}
+
+/* Footer */
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.footer .socials a {
+  color: #bbb;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.footer .socials a:hover {
+  color: white;
+}
+
+/* Responsive Navigation */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+  .header .nav {
+    margin-top: 1rem;
+  }
+}
